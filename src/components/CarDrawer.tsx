@@ -85,8 +85,7 @@ const CarDrawer: React.FC<CarDrawerProps> = ({ car, isOpen, onClose }) => {
             </div>
 
             {/* Drawer Content */}
-            <div className="p-10 md:p-14 flex flex-col flex-1 bg-[#050505] z-10">
-              
+            <div className="px-6 md:px-14 pt-10 md:pt-14 pb-0 flex flex-col flex-1 bg-[#050505] z-10 relative">
               <div className="mb-12 border-b border-[#222] pb-10">
                 <span className="text-[#a89050] text-[9px] tracking-[0.3em] uppercase mb-4 font-bold block">
                   {car.category}
@@ -186,12 +185,12 @@ const CarDrawer: React.FC<CarDrawerProps> = ({ car, isOpen, onClose }) => {
                       
                     </div>
 
-                    <div className="mt-auto">
+                    <div className="sticky bottom-0 left-0 right-0 bg-[#050505] pb-8 md:pb-12 pt-6 z-20 shadow-[0_-40px_40px_rgba(5,5,5,0.95)] mt-auto border-t border-[#111]">
                       <button 
                         onClick={() => setBookingState('form')}
-                        className="w-full flex items-center justify-center gap-4 py-6 bg-[#D4AF37] hover:bg-white text-black transition-colors uppercase tracking-[0.2em] text-xs font-bold"
+                        className="w-full flex items-center justify-center gap-4 py-5 md:py-6 bg-[#D4AF37] hover:bg-white text-black transition-colors uppercase tracking-[0.2em] text-[11px] md:text-xs font-bold"
                       >
-                        Richiedi Allocazione
+                        Prenota Vettura
                         <ChevronRight size={16} />
                       </button>
                     </div>
@@ -231,19 +230,19 @@ const CarDrawer: React.FC<CarDrawerProps> = ({ car, isOpen, onClose }) => {
                         </select>
                       </div>
 
-                      <div className="mt-auto pt-8 flex gap-4">
+                      <div className="sticky bottom-0 left-0 right-0 bg-[#050505] pb-8 md:pb-12 pt-6 z-20 shadow-[0_-40px_40px_rgba(5,5,5,0.95)] flex gap-4 mt-auto border-t border-[#111]">
                         <button 
                           type="button"
                           onClick={() => setBookingState('idle')}
-                          className="w-1/3 py-6 bg-transparent border border-[#333] hover:bg-[#111] text-gray-400 uppercase tracking-[0.2em] text-[10px] font-bold transition-all"
+                          className="w-1/3 py-5 md:py-6 bg-transparent border border-[#333] hover:bg-[#111] text-gray-400 uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold transition-all"
                         >
                           Annulla
                         </button>
                         <button 
                           type="submit"
-                          className="w-2/3 py-6 bg-white hover:bg-[#D4AF37] text-black uppercase tracking-[0.2em] text-[10px] font-bold transition-all"
+                          className="w-2/3 py-5 md:py-6 bg-white hover:bg-[#D4AF37] text-black uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold transition-all"
                         >
-                          Invia Richiesta Banca
+                          Invia Richiesta
                         </button>
                       </div>
                     </form>
