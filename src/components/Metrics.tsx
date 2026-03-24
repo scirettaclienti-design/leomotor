@@ -14,7 +14,7 @@ const Metrics: React.FC = () => {
           className="flex flex-col items-center justify-center py-16"
         >
           <div className="text-white font-display text-5xl font-light mb-3 flex items-start">
-            45<span className="text-[#a89050] font-sans text-2xl font-bold ml-1">+</span>
+            06
           </div>
           <p className="text-gray-500 font-sans tracking-[0.3em] text-[9px] uppercase font-bold">
             Vetture gestite
